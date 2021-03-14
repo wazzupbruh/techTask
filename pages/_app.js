@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import styles from "../styles/styles.scss";
+import "../Modal/Modal.style.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 }
-
-export default MyApp
